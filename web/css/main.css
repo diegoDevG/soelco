@@ -10,19 +10,32 @@ nav .button-collapse i {
     color: #0065B3;
 }
 
-nav ul li{
-    width: 180px;
+#productos-menu{
+    width: 155px;
 }
 
 .dropdown-content li>a, .dropdown-content li>span {    
     color: #00328F;    
 }
 
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons{
+    margin: 0;
+}
+
+.side-nav li>a>i{
+    padding-right: 35px;
+    color: #0065B3;
+}
+/* nav ul a {    
+    margin-bottom: -10px;
+} */
+
 .hero{    
     background: #0065B3; 
     background: -webkit-radial-gradient(bottom,#0096D6 12%,#00328F);
     background: radial-gradient(at bottom,#0096D6 12%,#00328F);    
     height: 70vh;
+    width: 100%;
     color: white;
     display: flex;
     justify-content: center;  
@@ -40,7 +53,7 @@ nav ul li{
 
 .animation-container{
     width: auto;
-    height: 35px;
+    height: 2.2rem;/* height: 35px; */
     overflow: hidden;
     margin-top: 20px;
     font-weight: bold;
@@ -133,7 +146,6 @@ h1 ul{
     100%{margin-top: -0px;}
 }
 
-
 .call-to-action{
     height: 80px;
     background: #e4e4e4;
@@ -142,11 +154,9 @@ h1 ul{
     align-items: center;
 }
 
-
 .btn-large {    
     background-color: #26a646;   
 }
-
 
 .slider-principal img{
     width: 100%;
@@ -154,20 +164,358 @@ h1 ul{
 }
 
 .ventas{
-    margin-top: 70px;
+    margin-top: -40px;
+}
+
+.ventas h4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: #0065B3; 
+    background: -webkit-radial-gradient(bottom,#0096D6 12%,#00328F);
+    background: radial-gradient(at bottom,#0096D6 12%,#00328F);  
+    padding: 20px 0;   
+    margin-top: 0;
 }
 
 .card .card-image .card-title {
     background-color: rgba(0, 0, 0, 0.69);
     padding: 0;
+    font-size: 22px; 
 }
-iframe{
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #00328F;
+   
+}
+
+/* .form iframe{
     min-height: 800px;;
+} */
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
-
-@media screen and max-width 400px {
-    .btn-large {    
-        background-color: #a62626;   
-    } 
+.slider .indicators .indicator-item {
+    background-color: #666666;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
+.slider .indicators .indicator-item.active {
+    background-color: #ffffff;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider .indicators {
+    bottom: 60px;
+    z-index: 100;
+}
+
+@media screen and (min-width: 992px) {  
+    /* nav ul a {    
+        margin-bottom: -10px;
+    } */
+
+}
+
+@media screen and (max-width: 992px) {   
+    
+        @keyframes cambiar{
+            0%{margin-top:0; }
+            3%{margin-top: 0;}
+        
+            5%{margin-top: -30px;}
+            8%{margin-top: -30px;}
+        
+            10%{margin-top: -60px;}
+            13%{margin-top: -60px;}
+        
+            15%{margin-top: -90px;}
+            18%{margin-top: -90px;}
+        
+            20%{margin-top: -120px;}
+            23%{margin-top: -120px;}
+        
+            25%{margin-top: -150px;}
+            28%{margin-top: -150px;}
+        
+            30%{margin-top: -180px;}
+            33%{margin-top: -180px;}
+        
+            35%{margin-top: -210px;}
+            38%{margin-top: -210px;}
+        
+            40%{margin-top: -240px;}
+            43%{margin-top: -240px;}
+        
+            45%{margin-top: -270px;}
+            48%{margin-top: -270px;}
+        
+            50%{margin-top: -300px;}
+            52%{margin-top: -300px;}
+        
+            54%{margin-top: -330px;}
+            56%{margin-top: -330px;}
+        
+            58%{margin-top: -300px;}
+            60%{margin-top: -300px;}
+        
+            62%{margin-top: -270px;}
+            64%{margin-top: -270px;}
+        
+            66%{margin-top: -240px;}
+            68%{margin-top: -240px;}
+        
+            70%{margin-top: -210px;}
+            72%{margin-top: -210px;}
+        
+            74%{margin-top: -180px;}
+            76%{margin-top: -180px;}
+        
+            78%{margin-top: -150px;}
+            80%{margin-top: -150px;}
+        
+            82%{margin-top: -120px;}
+            84%{margin-top: -120px;}
+        
+            86%{margin-top: -90px;}
+            88%{margin-top: -90px;}
+        
+            90%{margin-top: -60px;}
+            92%{margin-top: -60px;}
+        
+            94%{margin-top: -30px;}
+            96%{margin-top: -30px;}
+        
+            98%{margin-top: -0px;}
+            100%{margin-top: -0px;}
+        }
+
+       
+        
+        
+    }
+
+
+    /* EStructura de paginas de producto */
+    .cabecera-muebles{
+        background-image: url(../img/muebles/oficina-principal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+    }
+    .cabecera-colchones{
+        background-image: url(../img/colchones/domiluna-cabezote.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-electricos{
+        background-image: url(../img/electricos/borealbanner.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-construccion{
+        background-image: url(../img/construccion/baner.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-electro{
+        background-image: url(../img/electro/exibicionsoelco.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-pinturas{
+        background-image: url(../img/pinturas/pintuco2.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-gaso{
+        background-image: url(../img/gaso/challenger.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-tools{
+        background-image: url(../img/tools/makita.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 350px;
+    }
+
+    .cabecera-griferia{
+        background-image: url(../img/griferias/gricol-1.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 350px;
+    }
+
+
+    .contenido h1{
+        border-bottom: 1px solid #DCDCDB;
+        text-shadow: 0 0;
+        font-size: 2.2rem;
+        color: rgb(133, 130, 130);
+        /* padding-left: 100px; */
+    }
+
+    .contenido h2{
+        /* border-bottom: 1px solid #DCDCDB; */
+        text-shadow: 0 0;
+        font-size: 1.5rem;
+        color: rgb(97, 97, 97);
+        /* padding-left: 100px; */
+    }
+    .materialboxed{
+        width: 100%;
+    }
+    .btn-float{
+        width: 150px;
+        border-bottom-left-radius: 25px; 
+        position: fixed;
+        bottom:30%; 
+        right:2%; 
+    }
+
+    .container p{
+        text-align: justify;
+    }
+
+    strong{
+        color: rgb(91, 127, 206);
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 320px){
+        .hide-super-small{
+            display: none;
+        }
+        .btn-large {           
+            width: 150px;
+        }
+
+        #cotiza{
+            display: none;
+        }     
+        
+    }
+
+
+    /* Inicio animacion gasodomesticos */
+
+    .ani-flame{
+        margin:0 auto;
+        padding-top: 200px;
+        width: 60px;
+        height: 60px;
+        position:relative;
+        transform-origin:center bottom;
+        animation-name: flicker;
+        animation-duration:3ms;
+        animation-delay:200ms;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      
+      .flame{
+        bottom:0;
+        position:absolute;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        transform:rotate(-45deg) scale(1.5,1.5);
+      }
+      
+      .yellow{
+        left:15px; 
+        width: 30px;
+        height: 30px;
+        background:gold;
+        box-shadow: 0px 0px 9px 4px gold;
+      }
+      
+      .orange{
+        left:10px; 
+        width: 40px;
+        height: 40px;
+        background:orange;
+        box-shadow: 0px 0px 9px 4px orange;
+      }
+      
+      .rojo{
+        left:5px;
+        width: 50px;
+        height: 50px;
+        background:OrangeRed;
+        box-shadow: 0px 0px 5px 4px OrangeRed;
+      }
+      
+      .white{
+        left:15px; 
+        bottom:-4px;
+        width: 30px;
+        height: 30px;
+        background:white;
+        box-shadow: 0px 0px 9px 4px white;
+      }
+      
+      .circle{
+        border-radius: 50%;
+        position:absolute;  
+      }
+      
+      .blue{
+        width: 15px;
+        height: 18px;
+        left:25px;
+        bottom:-25px; 
+        background: SlateBlue;
+        box-shadow: 0px -15px 25px 20px SlateBlue;
+      }
+      
+      .black{
+        width: 40px;
+        height: 40px;
+        left:10px;
+        bottom:-60px;  
+        background: black;
+        box-shadow: 0px 0px 15px 10px black;
+      }
+      
+      @keyframes flicker{
+        0%   {transform: rotate(-1deg);}
+        20%  {transform: rotate(1deg);}
+        40%  {transform: rotate(-1deg);}
+        60%  {transform: rotate(1deg) scaleY(1.04);}
+        80%  {transform: rotate(-2deg) scaleY(0.92);}
+        100% {transform: rotate(1deg);}
+      }
+      /* Animacion gasodomesticos Fin */
